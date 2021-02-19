@@ -3,8 +3,8 @@
 	<h1 style="color: white">Cocktails</h1>
 	<div class="cards">
 	<% @cocktails.each do |cocktail| %>
-		<% if cocktail.photo.attached? %>
-		<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 300, crop: :fill %>')">
+		<% if cocktail.photos[0] %>
+		<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photos[0].key, height: 300, crop: :fill %>')">
 
 		<h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
 		</div>
