@@ -8,9 +8,9 @@
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
-Ingredient.create(name: "CBD")
-Ingredient.create(name: "THC")
-Ingredient.create(name: "Crushed Cannabis Concentrate (CCC)")
+Ingredient.create(name: "liquid nitrogen")
+Ingredient.create(name: "gluten")
+Ingredient.create(name: "Gluten free gluten")
 Ingredient.create(name: "gluten free soy")
 
 Cocktail.create(name: "Mojito")

@@ -1,11 +1,12 @@
+<div class="container my-3">
 <h2 style=color:white;><%= @cocktail.name %></h2>
 <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
 <% @cocktail.doses.each do |dose| %>
-<h2>doses</h2>
-<h3>dose ingredient: <%= dose.ingredient.name %></h3>
-<h3>dose description: <%= dose.description %></h3>
+<h3 style=color:white;>dose ingredient: <%= dose.ingredient.name %></h3>
+<h3 style=color:white;>dose description: <%= dose.description %></h3>
 <%= link_to "Delete dose", dose_path(dose), method: :delete %>
 
 <% end %>
 
 <%= link_to "Add dose", new_cocktail_dose_path(@cocktail) %>
+</div>
