@@ -4,6 +4,10 @@
 <% @cocktail.photos.each do |photo| %>
 	<%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>
+<div class="contained">
+	<h2 style=color:white;><%= @cocktail.recipe %></h2>
+</div>
+
 <% @cocktail.doses.each do |dose| %>
 
 <h3 style=color:white;>dose ingredient: <%= dose.ingredient.name %></h3>

@@ -20,3 +20,10 @@ label {
 .btn {
 	background-color: $blue;
 }
+
+.contained {
+	display: flex;
+	top: 55px;
+	right: 900px;
+	position: absolute;
+}
