@@ -5,7 +5,7 @@
 	<%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>
 <div class="contained">
-	<h2 style=color:white;><%= @cocktail.recipe %></h2>
+	<h2 style=color:black; class="recipe"><%= @cocktail.recipe %></h2>
 </div>
 
 <% @cocktail.doses.each do |dose| %>
