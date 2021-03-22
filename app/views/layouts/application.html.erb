@@ -10,7 +10,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body style="background-image: url('<%= current_page?(cocktails_path) ? image_path('1482330.jpg') : image_path('dark.jpg') %>'); background-size: cover;">
+   <body style="background-image: url('<%= current_page?(root_path) || current_page?(cocktails_path) ? image_path('1482330.jpg') : image_path('dark.jpg') %>'); background-size: cover;">
     <%= yield %>
 
   </body>
